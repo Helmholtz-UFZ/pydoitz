@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.2.0", "setuptools_scm[toml]>=3.4.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pydoitz"
+authors = [{name = "Toni Harzendorf", email = "toni.harzendorf@ufz.de"}]
+license = {text = "MIT"}
+description = "Python Wrapper around iDoit JSON-RPC"
+readme = "README.md"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Software Development :: Libraries",
+]
+requires-python = ">=3.7"
+dynamic = ["version"]
+dependencies = [
+  "requests==2.31.0",
+]
+
+[tool.setuptools]
+packages = ["pydoitz"]
